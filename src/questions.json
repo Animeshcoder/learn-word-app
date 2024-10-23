@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2024-10-20",
+    "word": "Galaxy",
+    "description": "A system of millions or billions of stars, together with gas and dust, held together by gravitational attraction.",
+    "question": "Which sentence explains the meaning of the word 'Galaxy'?",
+    "options": [
+      "The galaxy is full of mysteries.",
+      "The garden is blooming with flowers.",
+      "The sun rises in the east.",
+      "The fish swim in the sea."
+    ],
+    "correctOption": 0
+  },
+  {
+    "date": "2024-10-21",
+    "word": "Asteroid",
+    "description": "A small rocky body orbiting the sun, commonly found in the asteroid belt between Mars and Jupiter.",
+    "question": "Choose the correct definition of the word 'Asteroid'.",
+    "options": [
+      "A small rocky body orbiting the sun.",
+      "A large body of water.",
+      "A type of flowering plant.",
+      "A species of bird."
+    ],
+    "correctOption": 0
+  },
+  {
+    "date": "2024-10-22",
+    "word": "Nebula",
+    "description": "A cloud of gas and dust in space, often acting as a nursery for new stars.",
+    "question": "What is the meaning of the word 'Nebula'?",
+    "options": [
+      "A cloud of gas and dust in space.",
+      "A type of star.",
+      "A planet in our solar system.",
+      "A galaxy."
+    ],
+    "correctOption": 0
+  },
+  {
+    "date": "2024-10-23",
+    "word": "Comet",
+    "description": "A celestial body of ice, dust, and rock with an elongated orbit around the sun.",
+    "question": "Define the term 'Comet'.",
+    "options": [
+      "A celestial body of ice and dust.",
+      "A satellite orbiting the Earth.",
+      "A type of star.",
+      "A planet in our solar system."
+    ],
+    "correctOption": 0
+  },
+  {
+    "date": "2024-10-24",
+    "word": "Quasar",
+    "description": "A massive and remote celestial object, emitting exceptionally large amounts of energy, often associated with a supermassive black hole.",
+    "question": "What does the word 'Quasar' refer to?",
+    "options": [
+      "A massive and remote celestial object.",
+      "A type of asteroid.",
+      "A comet.",
+      "A dwarf planet."
+    ],
+    "correctOption": 0
+  }
+]

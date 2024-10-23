@@ -1,0 +1,118 @@
+.lock-screeni-pad-container {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allow children to be positioned absolutely */
+  }
+  
+  .lock-screeni-pad-lock-screeni-pad {
+    width: 100%;
+    height: 100%; /* Fill the entire viewport */
+    position: relative; /* So children can be positioned absolutely */
+  }
+  
+  .lock-screeni-pad-wallpaper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover; /* Make sure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-image: url("/external/tq_lrozmyuna9-1q5-1200w.png"); /* Fullscreen background */
+  }
+  
+  .lock-screeni-pad-time {
+    position: absolute;
+    top: 12vh; /* 20% from the top */
+    width: 100%;
+    text-align: center; /* Center time horizontally */
+  }
+  
+  .lock-screeni-pad-time-text {
+    color: white;
+    font-size: 6vw; /* Scales the font size based on viewport width */
+    font-family: Advent Pro;
+    font-weight: 500;
+  }
+  
+  .lock-screeni-pad-text10 {
+    position: absolute;
+    top: 8vh; /* Adjust this value to move the date */
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2vw; /* Scales the font size */
+    font-family: Advent Pro;
+    font-weight: 500;
+  }
+  
+  .lock-screeni-pad-status-bar {
+    position: absolute;
+    top: 0;
+    width: 96%;
+    padding: 1vh 2vw; /* Relative padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lock-screeni-pad-left, .lock-screeni-pad-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lock-screeni-pad-text14 {
+    color: white;
+    font-size: 1vw;
+  }
+  
+  .lock-screeni-pad-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Ensure items are pushed to the right */
+    width: auto; /* Let the width adjust dynamically */
+    flex-grow: 1; /* Allow it to take available space */
+  }
+  
+  .lock-screeni-pad-battery-icon {
+    display: flex;
+    align-items: center;
+    width: 26px;
+    height: 12px;
+    justify-content: center;
+    border: 1px solid white; /* Battery frame */
+    padding: 2px;
+    margin-left: 5px; /* Space between battery icon and text */
+  }
+  
+  .lock-screeni-pad-battery-frame {
+    width: 100%; /* Battery frame width */
+    height: 100%; /* Battery frame height */
+    position: relative;
+  }
+  
+  .lock-screeni-pad-battery-fill {
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    border-radius: 1.5px;
+  }
+  
+  .lock-screeni-pad-charging-icon {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    right: -15px;
+  }
+  
+  .lock-screeni-pad-text18 {
+    color: white;
+    font-size: 2vh;
+    height: auto;
+    font-weight: 500;
+    text-align: left;
+    line-height: 14px;
+    padding: 2px;
+  }
+  

@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #989898;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.main-container {
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Position for pseudo-element */
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Adjust opacity */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.word-description {
+  width: 60%; /* Adjust width to fit better */
+  max-width: 600px; /* Ensure it doesn't get too wide */
+  text-align: center;
+  margin-bottom: 20px; /* Increase margin for better spacing */
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 20px; /* Increase padding for more space around content */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Add slight background color for better readability */
+}
+
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.calendar, .quiz {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.calendar {
+  width: 35%;
+}
+
+.calendar-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.quiz {
+  width: 65%;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}

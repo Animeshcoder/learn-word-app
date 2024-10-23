@@ -1,0 +1,74 @@
+/* Main calendar container styling */
+.calendar-container {
+  background-color: rgba(255, 255, 255) !important;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  width: 35%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.calendar-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.custom-calendar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 100%;
+}
+
+/* Calendar tile styling */
+.react-calendar__tile {
+  text-align: center;
+  padding: 10px;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Current day styling */
+.react-calendar__tile--now {
+  background: #8a2be2;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Selected day styling */
+.react-calendar__tile--active {
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Weekend days styling */
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+/* Hover and focus styling */
+.react-calendar__tile:hover,
+.react-calendar__tile:focus {
+  background: #d1ecf1;
+}
+
+/* Correct submission styling */
+.submitted-correct {
+  background-color: green !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+/* Incorrect submission styling */
+.submitted-incorrect {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 50%;
+}
