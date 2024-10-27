@@ -13,15 +13,25 @@ const CustomCalendar = ({ onDateChange }) => {
 
   const tileClassName = ({ date, view }) => {
     if (view === 'month') {
-      const dateString = new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().split('T')[0];
-      const submission = submissions.find(sub => sub.date === dateString);
-      if (submission) {
-        return submission.correct ? 'submitted-correct' : 'submitted-incorrect';
-      }
+      // Create a new Date object and set time to midnight
+      const adjustedDate = new Date(date);
+      adjustedDate.setHours(0, 0, 0, 0); // Set to midnight to avoid time issues
+  
+      // Format the date to YYYY-MM-DD using toLocaleDateString
+      const dateString = adjustedDate.toLocaleDateString('en-CA');
+  
+      // Find the corresponding submission for the date
+      const submission = submissions.find(submission => submission.date === dateString);
+  
+      // Log submissions for debugging
+      console.log(submissions);
+  
+      // Return the appropriate class name based on submission correctness
+      return submission ? (submission.correct ? 'submitted-correct' : 'submitted-incorrect') : null;
     }
-    return null;
+    return null; // Return null if not in month view
   };
-
+  
   return (
     <div className="calendar-container">
       <h2>Check Your Progress</h2>

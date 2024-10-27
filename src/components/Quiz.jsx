@@ -10,16 +10,28 @@ const Quiz = ({ selectedDate }) => {
   const [submissions, setSubmissions] = useState([]);
 
   useEffect(() => {
+    // Create a new Date object from selectedDate
     const adjustedDate = new Date(selectedDate);
-    adjustedDate.setDate(selectedDate.getDate() + 1); // Increment date by one
-    const formattedDate = adjustedDate.toISOString().split('T')[0];
-    console.log(formattedDate, "date"); // Debug log
+    console.log("Original selectedDate:", selectedDate);
+    
+    // Optionally, you can adjust the date here if needed, but it looks like you want the same day.
+    // Uncomment the line below to increment the date by one
+    // adjustedDate.setDate(adjustedDate.getDate() + 1); // Increment date by one
+  
+    // Ensure the adjusted date reflects the correct day and format it
+    adjustedDate.setHours(0, 0, 0, 0); // Set to midnight in local time
+  
+    // Format the date to YYYY-MM-DD
+    const formattedDate = adjustedDate.toLocaleDateString('en-CA'); // Using ISO format (YYYY-MM-DD)
+    
+    console.log(formattedDate, "Formatted date"); // Debug log
     const questionForDate = questions.find(q => q.date === formattedDate);
     setCurrentQuestion(questionForDate);
-
+  
     const savedSubmissions = JSON.parse(localStorage.getItem('submissions')) || [];
     setSubmissions(savedSubmissions);
   }, [selectedDate]);
+  
 
   const handleOptionChange = (index) => {
     setSelectedOption(index);
@@ -29,7 +41,7 @@ const Quiz = ({ selectedDate }) => {
 
     const updatedSubmissions = [...submissions];
     const adjustedDate = new Date(selectedDate);
-    adjustedDate.setDate(selectedDate.getDate() + 1); // Increment date by one
+    adjustedDate.setDate(selectedDate.getDate()); // Increment date by one
     const formattedDate = adjustedDate.toISOString().split('T')[0];
     const existingSubmission = updatedSubmissions.find(submission => submission.date === formattedDate);
     if (existingSubmission) {

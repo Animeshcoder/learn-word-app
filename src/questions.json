@@ -1,67 +1,405 @@
 [
   {
-    "date": "2024-10-20",
-    "word": "Galaxy",
-    "description": "A system of millions or billions of stars, together with gas and dust, held together by gravitational attraction.",
-    "question": "Which sentence explains the meaning of the word 'Galaxy'?",
+    "date": "2024-10-01",
+    "word": "Astronomy",
+    "description": "The scientific study of celestial objects, space, and the universe as a whole.",
+    "question": "What is the study of celestial objects and the universe called?",
     "options": [
-      "The galaxy is full of mysteries.",
-      "The garden is blooming with flowers.",
-      "The sun rises in the east.",
-      "The fish swim in the sea."
+      "Astronomy",
+      "Astrology",
+      "Geology",
+      "Oceanography"
     ],
     "correctOption": 0
   },
   {
-    "date": "2024-10-21",
-    "word": "Asteroid",
-    "description": "A small rocky body orbiting the sun, commonly found in the asteroid belt between Mars and Jupiter.",
-    "question": "Choose the correct definition of the word 'Asteroid'.",
+    "date": "2024-10-02",
+    "word": "Star",
+    "description": "A luminous sphere of plasma held together by gravity, commonly found in galaxies.",
+    "question": "Which option describes a 'Star'?",
     "options": [
-      "A small rocky body orbiting the sun.",
-      "A large body of water.",
-      "A type of flowering plant.",
-      "A species of bird."
+      "A planet in our solar system",
+      "A luminous sphere of plasma",
+      "A natural satellite of Earth",
+      "A rocky body orbiting the sun"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-03",
+    "word": "Light Year",
+    "description": "The distance that light travels in one year, used to measure astronomical distances.",
+    "question": "What does 'Light Year' measure?",
+    "options": [
+      "The brightness of stars",
+      "The distance light travels in one year",
+      "The time it takes for Earth to orbit the sun",
+      "The size of a galaxy"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-04",
+    "word": "Planet",
+    "description": "A celestial body that orbits a star, is spherical, and has cleared its orbit of other debris.",
+    "question": "Which sentence best describes a 'Planet'?",
+    "options": [
+      "A small rocky body",
+      "A luminous sphere of gas",
+      "A body orbiting a star, spherical and clear of debris",
+      "A gas cloud in space"
+    ],
+    "correctOption": 2
+  },
+  {
+    "date": "2024-10-05",
+    "word": "Orbit",
+    "description": "The gravitational path taken by an object around a star, planet, or moon.",
+    "question": "What does the word 'Orbit' refer to?",
+    "options": [
+      "The surface of a planet",
+      "The gravitational path of an object",
+      "The atmosphere of a celestial body",
+      "The light emitted by a star"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-06",
+    "word": "Black Hole",
+    "description": "A region in space with such strong gravitational effects that not even light can escape it.",
+    "question": "Define 'Black Hole'.",
+    "options": [
+      "A star emitting a lot of energy",
+      "A planet with rings",
+      "A region in space with intense gravity",
+      "A large asteroid"
+    ],
+    "correctOption": 2
+  },
+  {
+    "date": "2024-10-07",
+    "word": "Solar System",
+    "description": "A collection of celestial bodies, including planets, moons, and asteroids, that orbit a star.",
+    "question": "What does 'Solar System' mean?",
+    "options": [
+      "A galaxy",
+      "A collection of stars",
+      "A system of planets orbiting a star",
+      "A cloud of gas"
+    ],
+    "correctOption": 2
+  },
+  {
+    "date": "2024-10-08",
+    "word": "Supernova",
+    "description": "A powerful explosion marking the death of a massive star.",
+    "question": "What does 'Supernova' describe?",
+    "options": [
+      "A large asteroid impact",
+      "A powerful explosion of a star",
+      "A planet forming event",
+      "A star being born"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-09",
+    "word": "Meteor",
+    "description": "A small body from outer space that burns up upon entering Earth's atmosphere, often seen as a streak of light.",
+    "question": "What is a 'Meteor'?",
+    "options": [
+      "A star that explodes",
+      "A celestial body burning up in Earth’s atmosphere",
+      "A planet’s satellite",
+      "A galaxy"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-10",
+    "word": "Constellation",
+    "description": "A group of stars that forms a recognizable pattern in the night sky.",
+    "question": "What is a 'Constellation'?",
+    "options": [
+      "A single star",
+      "A group of stars forming a pattern",
+      "A planet",
+      "A comet"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-11",
+    "word": "Exoplanet",
+    "description": "A planet that orbits a star outside our solar system.",
+    "question": "What does 'Exoplanet' mean?",
+    "options": [
+      "A planet within our solar system",
+      "A planet orbiting a star outside our solar system",
+      "A star in another galaxy",
+      "A moon orbiting another planet"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-12",
+    "word": "Asteroid Belt",
+    "description": "The region of space between Mars and Jupiter where most asteroids in our solar system are found.",
+    "question": "Where is the 'Asteroid Belt' located?",
+    "options": [
+      "Between Earth and Mars",
+      "Between Mars and Jupiter",
+      "Between Saturn and Uranus",
+      "Around the Sun"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-13",
+    "word": "Pulsar",
+    "description": "A highly magnetized, rotating neutron star that emits beams of electromagnetic radiation.",
+    "question": "What is a 'Pulsar'?",
+    "options": [
+      "A type of comet",
+      "A highly magnetized, rotating neutron star",
+      "A planet orbiting another star",
+      "A cloud of gas in space"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-14",
+    "word": "Galaxy Cluster",
+    "description": "A group of galaxies held together by gravity.",
+    "question": "What does 'Galaxy Cluster' mean?",
+    "options": [
+      "A single galaxy",
+      "A group of galaxies held together by gravity",
+      "A planet system",
+      "A cluster of stars within one galaxy"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-15",
+    "word": "Nebula",
+    "description": "A cloud of gas and dust in space, often acting as a nursery for new stars.",
+    "question": "What is a 'Nebula'?",
+    "options": [
+      "A cloud of gas and dust in space",
+      "A type of star",
+      "A planet in our solar system",
+      "A galaxy"
+    ],
+    "correctOption": 0
+  },
+  {
+    "date": "2024-10-16",
+    "word": "Dwarf Planet",
+    "description": "A celestial body resembling a small planet but lacking certain criteria to be classified as a planet.",
+    "question": "What is a 'Dwarf Planet'?",
+    "options": [
+      "A type of star",
+      "A small planet that does not meet all criteria for full planetary status",
+      "A large asteroid",
+      "A moon orbiting a planet"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-17",
+    "word": "Event Horizon",
+    "description": "The boundary around a black hole beyond which nothing can escape.",
+    "question": "What does 'Event Horizon' refer to?",
+    "options": [
+      "The edge of a galaxy",
+      "The boundary of a black hole",
+      "The orbit of a planet",
+      "The surface of a neutron star"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-18",
+    "word": "Red Giant",
+    "description": "A late stage in the life cycle of a star where it expands and cools after burning most of its hydrogen.",
+    "question": "What is a 'Red Giant'?",
+    "options": [
+      "A young star",
+      "A type of galaxy",
+      "A late-stage star that has expanded and cooled",
+      "A comet"
+    ],
+    "correctOption": 2
+  },
+  {
+    "date": "2024-10-19",
+    "word": "White Dwarf",
+    "description": "The remaining core of a low-mass star after it has shed its outer layers, cooling and fading over time.",
+    "question": "What does 'White Dwarf' refer to?",
+    "options": [
+      "A young planet",
+      "The core remnant of a low-mass star",
+      "A type of asteroid",
+      "A black hole"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-20",
+    "word": "Comet",
+    "description": "A small icy body in the solar system that, when passing close to the sun, displays a visible coma or tail.",
+    "question": "What is a 'Comet'?",
+    "options": [
+      "A type of star",
+      "A small icy body that forms a tail near the sun",
+      "A planet's satellite",
+      "A type of galaxy"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-21",
+    "word": "Quasar",
+    "description": "A massive and remote celestial object, emitting exceptionally large amounts of energy, often associated with a supermassive black hole.",
+    "question": "What does the word 'Quasar' refer to?",
+    "options": [
+      "A massive and remote celestial object",
+      "A type of asteroid",
+      "A comet",
+      "A dwarf planet"
     ],
     "correctOption": 0
   },
   {
     "date": "2024-10-22",
-    "word": "Nebula",
-    "description": "A cloud of gas and dust in space, often acting as a nursery for new stars.",
-    "question": "What is the meaning of the word 'Nebula'?",
+    "word": "Aurora",
+    "description": "A natural light display in Earth's sky, predominantly seen in high-latitude regions, caused by the collision of charged particles with the atmosphere.",
+    "question": "What is an 'Aurora'?",
     "options": [
-      "A cloud of gas and dust in space.",
-      "A type of star.",
-      "A planet in our solar system.",
-      "A galaxy."
+      "A natural light display caused by atmospheric particles",
+      "A type of star cluster",
+      "A bright comet",
+      "A meteor shower"
     ],
     "correctOption": 0
   },
   {
     "date": "2024-10-23",
-    "word": "Comet",
-    "description": "A celestial body of ice, dust, and rock with an elongated orbit around the sun.",
-    "question": "Define the term 'Comet'.",
+    "word": "Equinox",
+    "description": "The time of year when day and night are approximately equal in length, occurring twice a year.",
+    "question": "What does 'Equinox' mean?",
     "options": [
-      "A celestial body of ice and dust.",
-      "A satellite orbiting the Earth.",
-      "A type of star.",
-      "A planet in our solar system."
+      "When day and night are equal in length",
+      "The longest day of the year",
+      "The shortest night of the year",
+      "A comet orbiting the sun"
     ],
     "correctOption": 0
   },
   {
     "date": "2024-10-24",
-    "word": "Quasar",
-    "description": "A massive and remote celestial object, emitting exceptionally large amounts of energy, often associated with a supermassive black hole.",
-    "question": "What does the word 'Quasar' refer to?",
+    "word": "Solstice",
+    "description": "The point in the year when the sun reaches its highest or lowest point in the sky at noon, marking the longest or shortest day.",
+    "question": "Define 'Solstice'.",
     "options": [
-      "A massive and remote celestial object.",
-      "A type of asteroid.",
-      "A comet.",
-      "A dwarf planet."
+      "When the day and night are equal",
+      "The longest or shortest day of the year",
+      "When a comet passes closest to the sun",
+      "A natural light display in the sky"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-25",
+    "word": "Cosmos",
+    "description": "The universe seen as a well-ordered whole, encompassing all of space, time, matter, and energy.",
+    "question": "What does the term 'Cosmos' refer to?",
+    "options": [
+      "Only our solar system",
+      "The universe as a well-ordered whole",
+      "A specific galaxy",
+      "The orbit of planets around a star"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-26",
+    "word": "Singularity",
+    "description": "A point in space-time where gravity is so intense that space and time are infinitely distorted, often found at the center of black holes.",
+    "question": "What is a 'Singularity' in space?",
+    "options": [
+      "A distant planet",
+      "A point in space-time with infinite gravity",
+      "A type of asteroid",
+      "A cluster of stars"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-27",
+    "word": "Light Curve",
+    "description": "A graph showing the brightness of an astronomical object over time, often used to study variable stars and exoplanets.",
+    "question": "What is a 'Light Curve'?",
+    "options": [
+      "A graph showing brightness over time",
+      "A type of star",
+      "A region around a black hole",
+      "An orbit of a planet around a star"
     ],
     "correctOption": 0
+  },
+  {
+    "date": "2024-10-28",
+    "word": "Dark Matter",
+    "description": "A type of matter that does not emit or absorb light, making it invisible, but detectable through its gravitational effects.",
+    "question": "What is 'Dark Matter'?",
+    "options": [
+      "Matter that emits a lot of light",
+      "Invisible matter detected by gravity",
+      "A type of black hole",
+      "An asteroid in deep space"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-29",
+    "word": "Redshift",
+    "description": "The phenomenon where light from an object moving away from the observer is stretched to longer wavelengths, making it appear redder.",
+    "question": "What does 'Redshift' describe?",
+    "options": [
+      "Light that changes to shorter wavelengths",
+      "Light appearing redder as an object moves away",
+      "The brightness of stars",
+      "A type of nebula"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-30",
+    "word": "Supercluster",
+    "description": "A large grouping of smaller galaxy clusters, forming some of the largest known structures in the universe.",
+    "question": "What is a 'Supercluster'?",
+    "options": [
+      "A single galaxy",
+      "A large grouping of galaxy clusters",
+      "A cluster of stars within one galaxy",
+      "A black hole"
+    ],
+    "correctOption": 1
+  },
+  {
+    "date": "2024-10-31",
+    "word": "Parallax",
+    "description": "The apparent shift in position of a nearby star against a distant background when viewed from different positions.",
+    "question": "What does 'Parallax' refer to?",
+    "options": [
+      "A type of comet",
+      "The apparent shift of a star's position",
+      "The orbit of a planet around a star",
+      "A gravitational pull between two stars"
+    ],
+    "correctOption": 1
   }
 ]

@@ -1,14 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Popup.css';
-import questions from '../questions.json'; // Import the questions JSON
+import questions from '../questions.json';
 
 const Popup = ({ onClose, onLearnMore }) => {
   const [currentWord, setCurrentWord] = useState({});
+  const hasRunEffect = useRef(false); // Track if useEffect has run
 
   useEffect(() => {
-    const today = new Date().toISOString().split('T')[0];
-    const wordForToday = questions.find(word => word.date === today);
-    setCurrentWord(wordForToday || {});
+    if (hasRunEffect.current) return; // Prevent reruns
+    hasRunEffect.current = true;
+
+    const todayDate = new Date().toLocaleDateString('en-CA'); // Format to YYYY-MM-DD
+    const lastShownDate = localStorage.getItem('lastShownWordDate');
+
+    // If the word for today has already been shown, retrieve and display it
+    if (lastShownDate === todayDate) {
+      const savedWord = JSON.parse(localStorage.getItem('currentWord'));
+      setCurrentWord(savedWord || {});
+      return;
+    }
+
+    let nextWord;
+
+    if (lastShownDate) {
+      const nextDate = new Date(lastShownDate);
+      nextDate.setDate(nextDate.getDate() + 1); // Increment by one day
+      const nextFormattedDate = nextDate.toLocaleDateString('en-CA');
+      nextWord = questions.find(word => word.date === nextFormattedDate);
+    }
+
+    // If no matching word is found (end of list), reset to the first word
+    if (!nextWord) {
+      nextWord = questions[0];
+    }
+
+    // Store today's date and the selected word in localStorage
+    localStorage.setItem('lastShownWordDate', nextWord.date);
+    localStorage.setItem('currentWord', JSON.stringify(nextWord));
+    setCurrentWord(nextWord);
   }, []);
 
   return (
